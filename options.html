@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timezone Converter Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Timezone Converter</h1>
+    <p class="subtitle">Settings</p>
+
+    <div class="setting-group">
+      <label for="default-tz">Default Timezone</label>
+      <p class="description">
+        Used as the source timezone when the selected text doesn't include
+        timezone information. Auto-detected from your system on first use.
+      </p>
+      <select id="default-tz"></select>
+    </div>
+
+    <div class="setting-group">
+      <label>Keyboard Shortcut</label>
+      <p class="description">
+        Current shortcut: <kbd>Ctrl+Shift+T</kbd> (Windows/Linux) or <kbd>Cmd+Shift+T</kbd> (Mac)<br>
+        Change it at <code>chrome://extensions/shortcuts</code>
+      </p>
+    </div>
+
+    <div class="setting-group">
+      <label>How to Use</label>
+      <p class="description">
+        1. Select text containing a date or time on any webpage.<br>
+        2. Right-click and choose "Convert to another timezone", or press the keyboard shortcut.<br>
+        3. Type a city name in the popup and press Enter.<br>
+        4. The converted time is inserted right after your selection.
+      </p>
+    </div>
+
+    <div id="status"></div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+CHROME WEB STORE LISTING
+========================
+
+NAME (max 75 chars):
+Timezone Converter — Select & Convert Dates Instantly
+
+SHORT DESCRIPTION (manifest.json "description", max 132 chars):
+Select any date and time on a webpage and instantly convert it to another timezone. Fast autocomplete with 280+ cities worldwide.
+
+CATEGORY:
+Productivity
+
+DETAILED DESCRIPTION:
+------
+
+Timezone Converter lets you select any date and time on a webpage and instantly convert it to another timezone — no copying, no Googling, no mental math.
+
+HOW IT WORKS
+
+1. Select a date or time on any webpage (emails, articles, calendars — anywhere)
+2. Press Option+D (Mac) or Alt+D (Windows/ChromeOS), or right-click and choose "Convert Timezone"
+3. Start typing a city name — the fast autocomplete narrows 280+ cities in real time
+4. Press Enter — the converted time appears right next to the original text
+
+WORKS EVERYWHERE
+
+In editable text (Gmail, Google Docs, text fields): the converted time is inserted in brackets right after your selection, e.g. [Mar 26, 2025, 11:00 PM JST, Tokyo].
+
+On read-only pages (news articles, documentation, wikis): a floating tooltip shows the converted time for 3 seconds near the selected text.
+
+SMART DATE PARSING
+
+Handles the way humans actually write dates and times:
+- "March 26 10AM"
+- "3/15/2025 2:30 PM"
+- "15 Jan 2024 14:30 EST"
+- "Friday, December 1st at noon"
+- "2024-01-15T10:30:00"
+- And dozens more formats
+
+TIMEZONE-AWARE
+
+- Displays proper timezone abbreviations (PST, JST, CET, IST — not "GMT+9")
+- Automatically accounts for Daylight Saving Time (PST vs PDT, CET vs CEST, etc.)
+- Your default timezone is auto-detected from your system — or set it manually in settings
+
+FAST & LIGHTWEIGHT
+
+- No external API calls — all conversion happens locally using your browser's built-in Intl API
+- No data leaves your browser
+- No account required
+- Minimal permissions: only activates on the current tab when you invoke it
+
+KEYBOARD-FIRST
+
+- Option+D / Alt+D to invoke
+- Type to search cities instantly
+- Arrow keys to navigate results
+- Enter to select — done
+
+280+ cities across every timezone, including major cities in North America, Europe, Asia, Africa, Oceania, and South America.
+
+------
+
+PERMISSION JUSTIFICATIONS:
+- activeTab: Required to read selected text and insert the converted result on the current page.
+- storage: Stores the user's preferred default timezone setting.
+- contextMenus: Adds a "Convert Timezone" option to the right-click context menu.
+- scripting: Injects the conversion dialog and logic into the active tab when invoked.

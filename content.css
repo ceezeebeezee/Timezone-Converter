@@ -1,0 +1,7 @@
+/* Content script CSS — styles are injected into shadow DOM via content.js */
+/* This file is intentionally minimal; it only styles the inserted result on the page */
+
+.tz-converted-time {
+  color: #1a73e8;
+  font-weight: 500;
+}
